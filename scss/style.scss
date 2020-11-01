@@ -1,0 +1,133 @@
+$font-stack: 'Manrope', sans-serif;
+$purple: #8C30F5;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-stack
+}
+
+.navbar {
+    height: 72px;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.leftnav {
+    display: flex;
+    align-items: center;
+}
+
+.logotype {
+    padding-left: 9.2px;
+    padding-right: 16px;
+}
+
+.logotype {
+    font-weight: 800;
+}
+
+ul {
+    list-style-type: none;
+    font-weight: 700;
+    font-size: 14px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.navbar a {
+    padding: 0 16px;
+}
+
+.navbar a:hover {
+    color: lighten(black, 10%);
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 96px 0 85px;
+}
+
+h1 {
+    font-size: 72px;
+    line-height: 94px;
+    margin: 0 0 32px;
+}
+
+.btn {
+    background-color: $purple;
+    color: white;
+    border-radius: 20px;
+    font-size: 22px;
+    padding: 16px 38px;
+    margin: 0 36px;
+
+}
+
+.phone {
+    display: flex;
+    justify-content: center;
+}
+
+.ellipse {
+    padding-top: 169px;
+}
+
+.end {
+    position: absolute;
+}
+
+.x {
+    padding-left: 20px;
+}
+
+@media(max-width:700px) {
+    .navbar,
+    .container,
+    .flex,
+    .leftnav,
+     {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0;
+    }
+
+    .leftnav {
+        margin-bottom: 15px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+
+}
